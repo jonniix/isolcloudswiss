@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+</head>
+<body>
+    <div class="logo-section">
+        <img src="images/logo%20edil%202024.png" alt="Logo Edil 2024" class="logo-small">
+        <img src="images/logo%20solcloud2.jpg" alt="Logo Solcloud" class="logo-main">
+    </div>
+    <button class="menu-button" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="monitoring.html">Monitoraggio</a>
+            <a href="cloud.html">Acquista kW</a>
+            <a href="install.html">Richiesta Installazione</a>
+        </div>
+        <button class="login-button" onclick="handleLoginLogout()">Login</button>
+    </nav>
+    <section id="home"> <!-- Mantieni l'ID 'home' per lo sfondo -->
+        <div class="login-container">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Portale Fotovoltaico. Tutti i diritti riservati.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

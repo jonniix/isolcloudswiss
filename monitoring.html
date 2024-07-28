@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>Monitoraggio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+</head>
+<body>
+    <div class="logo-section">
+        <img src="images/logo%20edil%202024.png" alt="Logo Edil 2024" class="logo-small">
+        <img src="images/logo%20solcloud2.jpg" alt="Logo Solcloud" class="logo-main">
+    </div>
+    <button class="menu-button" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="monitoring.html" class="active">Monitoraggio</a>
+            <a href="cloud.html">Acquista kW</a>
+            <a href="install.html">Richiesta Installazione</a>
+        </div>
+        <button class="login-button" onclick="handleLoginLogout()">Login</button>
+    </nav>
+    <section id="home">
+        <div class="container">
+            <h2 class="section-title">Monitoraggio</h2>
+            <ul class="monitoring-list">
+                <li class="monitoring-item">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="font-size: 1.5em;">my solcloud</h3>
+                        <p id="installed-power-50"></p>
+                    </div>
+                    <div class="monitoring-pair">
+                        <p id="current-power-50">Potenza attuale: </p>
+                        <p id="current-power-chf-50"></p>
+                    </div>
+                    <div class="monitoring-pair">
+                        <p id="daily-energy-50">Produzione totale di oggi: </p>
+                        <p id="daily-energy-chf-50"></p>
+                    </div>
+                    <div class="monitoring-pair">
+                        <p id="energy-yesterday-50">Produzione totale di ieri: </p>
+                        <p id="energy-yesterday-chf-50"></p>
+                    </div>
+                    <div class="monitoring-pair">
+                        <p id="monthly-production-50">Produzione mensile: </p>
+                        <p id="monthly-production-chf-50"></p>
+                    </div>
+                    <div class="monitoring-pair">
+                        <p id="historical-production-50">Produzione storica: </p>
+                        <p id="historical-production-chf-50"></p>
+                    </div>
+                    <div id="chart-container-50" class="chart-small">
+                        <div class="chart-box">
+                            <canvas id="kWhChart50"></canvas>
+                        </div>
+                        <div class="chart-box">
+                            <canvas id="chfChart50"></canvas>
+                        </div>
+                    </div>
+                    <button class="toggle-size-button switch-button" onclick="toggleChartSize50()">Apri</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Portale Fotovoltaico. Tutti i diritti riservati.</p>
+    </footer>
+    <script src="js/script.js"></script>
+=======
+    <title>Monitoraggio My Solcloud</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body data-page="monitoring">
+    <nav>
+        <!-- Navigation elements -->
+    </nav>
+    <section id="home">
+        <!-- Section elements -->
+    </section>
+    <section id="daily-energy-50"></section>
+    <section id="daily-energy-chf-50"></section>
+    <section id="historical-production-50"></section>
+    <section id="historical-production-chf-50"></section>
+    <section id="monthly-production-50"></section>
+    <section id="monthly-production-chf-50"></section>
+    <section id="current-power-50"></section>
+    <section id="current-power-chf-50"></section>
+    <section id="installed-power-50"></section>
+    <canvas id="chart-50" width="400" height="200"></canvas>
+    <button onclick="getYesterdayProduction('3479348', 'O7J9U1OA7COX35HK62UTHJWJC4JYF7R7', true)">Produzione di Ieri</button>
+    <section id="yesterday-energy-50"></section>
+    <section id="yesterday-energy-chf-50"></section>
+>>>>>>> fe114a4339dee966848a7cc58eb60a957eb45676
+</body>
+</html>
+
+
+
+
+
+
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> fe114a4339dee966848a7cc58eb60a957eb45676

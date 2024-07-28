@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portale Fotovoltaico - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.0.0"></script>
+</head>
+<body>
+    <div class="logo-section">
+        <img src="images/logo%20edil%202024.png" alt="Logo Edil 2024" class="logo-small">
+        <img src="images/logo%20solcloud2.jpg" alt="Logo Solcloud" class="logo-main">
+    </div>
+    <button class="menu-button" id="menuButton">
+        <div></div>
+        <div></div>
+        <div></div>
+    </button>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="monitoring.html">Monitoraggio</a>
+            <a href="cloud.html">Acquista kW</a>
+            <a href="install.html">Richiesta Installazione</a>
+        </div>
+        <button class="login-button" id="loginButton">Login</button>
+    </nav>
+    <section id="home">
+        <div class="container">
+            <h2 class="section-title">Produzione Globale</h2>
+            <ul class="monitoring-list">
+                <li class="monitoring-item">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3 style="font-size: 1.5em;">Produzione Globale</h3>
+                        <p id="installed-power"></p>
+                    </div>
+                    <div class="monitoring-pair">
+                        <p id="current-power">Potenza attuale: </p>
+                        <p id="current-power-chf"></p>
+                    </div>
+                    <div class="monitoring-pair">
+                        <p id="daily-energy">Produzione totale di oggi: </p>
+                        <p id="daily-energy-chf"></p>
+                    </div>
+                    <div class="monitoring-pair">
+                        <p id="energy-yesterday">Produzione totale di ieri: </p>
+                        <p id="energy-yesterday-chf"></p>
+                    </div>
+                    <div class="monitoring-pair">
+                        <p id="monthly-production">Produzione mensile: </p>
+                        <p id="monthly-production-chf"></p>
+                    </div>
+                    <div class="monitoring-pair">
+                        <p id="historical-production">Produzione storica: </p>
+                        <p id="historical-production-chf"></p>
+                    </div>
+                    <button id="toggleDataButton" class="switch-button">Visualizza Dati Precedenti</button>
+                    <p id="chart-date" style="color: white; text-align: center; margin-top: 10px;"></p>
+                    <div id="chart-container" class="chart-small">
+                        <div class="chart-box">
+                            <canvas id="kWhChart"></canvas>
+                        </div>
+                        <div class="chart-box">
+                            <canvas id="chfChart"></canvas>
+                        </div>
+                    </div>
+                    <button id="toggleSizeButton" class="switch-button">Apri</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Portale Fotovoltaico. Tutti i diritti riservati.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
